@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:showDividers="middle"
+              android:divider="@drawable/linefull"
+              android:background="@color/colorPrimary">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="13dp"
+        android:gravity="center"
+        android:text="更多"
+        android:textSize="16dp"
+        android:textColor="@color/text_color1"/>
+    <com.jyt.huangguan.view.widget.JumpItem
+        android:id="@+id/item_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="个人资料"
+        app:Jump="true">
+    </com.jyt.huangguan.view.widget.JumpItem>
+
+    <com.jyt.huangguan.view.widget.JumpItem
+        android:id="@+id/item_maneuver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:title="机动人员"
+        app:Jump="true">
+    </com.jyt.huangguan.view.widget.JumpItem>
+
+    <com.jyt.huangguan.view.widget.JumpItem
+        android:id="@+id/item_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:title="查看定位"
+        app:Jump="true">
+    </com.jyt.huangguan.view.widget.JumpItem>
+
+    <com.jyt.huangguan.view.widget.JumpItem
+        android:visibility="gone"
+        android:id="@+id/item_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="共享资料"
+        app:Jump="true">
+    </com.jyt.huangguan.view.widget.JumpItem>
+
+    <com.jyt.huangguan.view.widget.JumpItem
+        android:id="@+id/item_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="关于我们"
+        app:Jump="true">
+    </com.jyt.huangguan.view.widget.JumpItem>
+
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_color"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/layUserInfo"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:background="@drawable/me_bg">
+
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imgUserHead"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/test_head"
+                app:riv_border_color="#fff"
+                app:riv_border_width="2dp"
+                app:riv_oval="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_toRightOf="@+id/imgUserHead"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:maxEms="15"
+                    android:text="昵称"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtUserDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:lines="1"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:src="@drawable/icon_white_more"
+                android:tint="#fff" />
+        </RelativeLayout>
+
+        <com.cnsunru.common.widget.titlebar.TitleBar
+            android:id="@+id/titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_height"
+            app:backgroundColor="@color/transparent"
+            app:bottomDividerHeight="0dp"
+            app:fitStatusBar="true"
+            app:rightText="设置"
+            app:rightTextColor="#fff"
+            app:rightVisible="visible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/stroke_top_and_bottom_line_drawable"
+        android:divider="@drawable/divider_inner_drawable"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <com.allen.library.CommonTextView
+            android:id="@+id/itemConsumptionRecord"
+            style="@style/DefItemStyle"
+            app:cLeftIconResForDrawableLeft="@drawable/me_icon_rcd"
+            app:cLeftTextString="资金记录"
+            app:cShowDividerLineType="none" />
+        <com.allen.library.CommonTextView
+            android:id="@+id/itemBudget"
+            style="@style/DefItemStyle"
+            app:cLeftIconResForDrawableLeft="@drawable/me_icon_project"
+            app:cLeftTextString="我的项目"
+            app:cShowDividerLineType="none" />
+        <com.allen.library.CommonTextView
+            android:id="@+id/itemActivity"
+            style="@style/DefItemStyle"
+            app:cLeftIconResForDrawableLeft="@drawable/me_icon_event"
+            app:cLeftTextString="参加的活动"
+            app:cShowDividerLineType="none" />
+        <com.allen.library.CommonTextView
+            android:id="@+id/itemCoupon"
+            style="@style/DefItemStyle"
+            app:cLeftIconResForDrawableLeft="@drawable/me_icon_coupon"
+            app:cLeftTextString="我的优惠劵"
+            app:cShowDividerLineType="none" />
+        <com.allen.library.CommonTextView
+            android:id="@+id/itemCollect"
+            style="@style/DefItemStyle"
+            app:cLeftIconResForDrawableLeft="@drawable/me_icon_like"
+            app:cLeftTextString="我的收藏"
+            app:cShowDividerLineType="none" />
+    </LinearLayout>
+</LinearLayout>

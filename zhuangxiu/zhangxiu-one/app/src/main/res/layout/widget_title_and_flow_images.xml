@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    >
+
+    <TextView
+        android:id="@+id/text_title"
+        style="@style/defaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/map_text1"
+        android:textSize="14dp"
+        android:text="标题" />
+
+    <com.nex3z.flowlayout.FlowLayout
+        android:id="@+id/v_flowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.nex3z.flowlayout.FlowLayout>
+</LinearLayout>

@@ -1,0 +1,56 @@
+package com.qqq.asdas.presenter;
+
+import android.os.Bundle;
+
+import com.qqq.asdas.DQDApi.MyRetrofit;
+import com.qqq.asdas.DQDApi.model.PlayerLeagueData;
+import com.qqq.asdas.view.PlayerLeagueDataView;
+import com.hannesdorfmann.mosby3.mvp.MvpBasePresenter;
+import com.qqq.asdas.view.fragments.PlayerLeagueDataFragment;
+
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+
+/**
+ * Created by chenxin.
+ * Date: 2017/5/11.
+ * Time: 22:15.
+ */
+
+public class PlayerLeagueDataPresenter extends MvpBasePresenter<PlayerLeagueDataView> {
+
+    public void loadData(Bundle b) {
+        String id;
+        if (b == null || (id = b.getString(PlayerLeagueDataFragment.ID)) == null || id.equals("") ){
+            getView().showError(new Exception("请求参数错误"), false);
+        } else {
+            if (isViewAttached()) {
+                MyRetrofit.getMyRetrofit().getApiService().getPlayerLeagueData(id).enqueue(new Callback<List<PlayerLeagueData>>() {
+                    @Override
+                    public void onResponse(Call<List<PlayerLeagueData>> call, Response<List<PlayerLeagueData>>
+                            response) {
+                        try {
+                            getView().setData(response.body());
+                            getView().showContent();
+                        } catch (Exception e) {
+                            getView().showError(new Exception("数据解析错误"), false);
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(Call<List<PlayerLeagueData>> call, Throwable t) {
+                        if (isViewAttached()) {
+                            if (isViewAttached()) {
+                                getView().showError(new Exception("网络请求错误\n请检查网络连接情况后\n点击重新加载"), false);
+                            }
+                        }
+                    }
+                });
+            }
+        }
+    }
+}
+

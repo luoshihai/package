@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="@mipmap/login1"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="77dp"
+        android:background="@mipmap/login2"/>
+
+    <EditText
+        android:id="@+id/et__tel"
+        android:layout_width="243dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/input_login"
+        android:hint="用户名"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:textColorHint="@color/et_login_hint"/>
+
+    <EditText
+        android:id="@+id/et_pwd"
+        android:layout_width="243dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/input_login"
+        android:hint="密码"
+        android:imeOptions="actionDone"
+        android:inputType="numberPassword"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:textColorHint="@color/et_login_hint"/>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="243dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_login"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="20dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@mipmap/login3"/>
+</LinearLayout>

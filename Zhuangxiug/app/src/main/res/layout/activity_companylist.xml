@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_color"
+    android:orientation="vertical">
+
+    <com.cnsunru.common.widget.titlebar.TabTitleBar
+        android:id="@+id/titleBar"
+        style="@style/BlackBackTitleBarStyle"
+        app:backgroundColor="@color/white">
+
+        <LinearLayout
+            android:id="@+id/titleContainer"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="35dp"
+            android:paddingRight="8dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_gray_radio5_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp">
+
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:inputType="none" />
+
+                <EditText
+                    android:id="@+id/editSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/home_icon_srch_n"
+                    android:drawablePadding="5dp"
+                    android:hint="输入搜索关键字进行搜索"
+                    android:imeOptions="actionSearch"
+
+                    android:inputType="text"
+                    android:lines="1"
+                    android:textColorHint="@color/text4"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.cnsunru.common.widget.titlebar.TabTitleBar>
+
+    <TextView
+        android:id="@+id/txtLocation"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/home_icon_location_n"
+        android:drawablePadding="4dp"
+        android:drawableRight="@drawable/icon_more"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="所在城市: 定位中.." />
+
+    <View style="@style/limit_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:divider="@color/limit_line1"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/layDistance"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/txtDistanceLab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/site_icon_sort_normal"
+                android:text="按距离排序"
+                android:textColor="@color/text4" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/layTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/txtTimeLab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/site_icon_sort_normal"
+                android:text="按时间排序"
+                android:textColor="@color/text4" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <include layout="@layout/view_refreshable_recyclerview" />
+</LinearLayout>

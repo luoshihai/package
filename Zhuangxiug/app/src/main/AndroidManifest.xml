@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cnsunru">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 用于访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".common.CommonApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/cq"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".main.SplashActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+
+        </activity>
+        <activity android:name=".main.Main2Activity"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".main.NavigatorActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".zhuangxiug.MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!-- 适配7.0相机相册权限 -->
+        <provider
+            android:name=".common.provider.ImageFileProvider"
+            android:authorities="com.cnsunru.zhuangxiug.file.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/boxing_file_provider" />
+        </provider>
+
+        <!-- 头像裁减界面 -->
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".settings.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".settings.FeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order.EditAddressInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order.ShippingAddressListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order.ShoppingCarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".settings.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".user.EditUserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".user.ConsumptionRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".user.MyCollectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".user.MyActivityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".user.MyCouponActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order.GoodsListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".order.SearchGoodsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order.MallPurchaseDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order.GoodsDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order.ScanQRActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.CompanyListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".home.CompanyDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.CompanyPlanListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.CompanyPlanDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.WorkSiteListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.WorkSiteDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.SelectionRaiderListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".user.ActivityDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.SelectionRaiderDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".user.MyProjectActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".home.CitySelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".budget.ProjectDetailsActivity"
+            android:configChanges="orientation|screenSize"
+            />
+
+        <service android:name=".test.folderwatcher.FolderWatcher" />
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="970d0b975a9c26df26666289d87c63b0" />
+
+        <activity
+            android:name=".budget.activity.ProjectListActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".budget.activity.DetailedEngineeringList"
+            android:configChanges="orientation|screenSize"
+            />
+        <activity
+            android:name=".budget.MaterialListInfoActivity"
+            android:configChanges="orientation|screenSize"
+            />
+        <activity
+            android:name=".budget.HouseTypeSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".budget.RoomInfoActivity"
+            android:configChanges="orientation|screenSize"
+            />
+        <activity
+            android:name=".budget.MaterialDetailsActivity"
+            android:configChanges="orientation|screenSize"
+            />
+        <activity
+            android:name=".order.ShopFilterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.WebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.MyActivityWebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.WorkSiteListWebActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".common.CompanyDetailsWebActivity"></activity>
+        <activity android:name=".budget.ProjectRoomDetailsActivity" />
+        <activity android:name=".login.ForgetPasswordActivity" />
+        <activity android:name=".budget.RoomTypeSelectActivity" />
+        <activity android:name=".budget.ProjectRoomAddProjectItemActivity" />
+        <activity android:name=".user.ModifyPasswordActivity" />
+        <activity android:name=".budget.ProductCategorySelectActivity" />
+        <activity android:name=".budget.SelectWorkTypeActivity" />
+        <activity android:name=".budget.MyProjectAddActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_color"
+    android:orientation="vertical">
+
+    <com.cnsunru.common.widget.titlebar.TitleBar
+        android:id="@+id/titleBar"
+        style="@style/BlackBackTitleBarStyle"
+        app:leftText="返回"
+        app:title="设置" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:orientation="vertical">
+
+            <View style="@style/limit_line" />
+
+            <com.sunrun.sunrunframwork.view.ItemView
+                android:id="@+id/setting_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fun_item_height"
+                app:SetLeftTextColor="@color/black_30"
+                app:SetRightImg="@drawable/icon_more"
+                app:leftTVText="账号安全" />
+
+            <!--<View-->
+                <!--style="@style/limit_line"-->
+                <!--android:visibility="visible" />-->
+
+            <!--<com.sunrun.sunrunframwork.view.ItemView-->
+                <!--android:id="@+id/settting_feedback"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/fun_item_height"-->
+                <!--app:SetLeftTextColor="@color/black_30"-->
+                <!--app:SetRightImg="@drawable/icon_more"-->
+                <!--app:leftTVText="意见反馈" />-->
+
+            <View
+                style="@style/limit_line"
+                android:visibility="visible" />
+
+            <com.sunrun.sunrunframwork.view.ItemView
+                android:id="@+id/settting_about"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fun_item_height"
+                app:SetLeftTextColor="@color/black_30"
+                app:SetRightImg="@drawable/icon_more"
+                app:leftTVText="关于我们" />
+
+            <View
+                style="@style/limit_line"
+                android:visibility="visible" />
+
+            <com.sunrun.sunrunframwork.view.ItemView
+                android:id="@+id/settting_clearCache"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fun_item_height"
+                app:SetLeftTextColor="@color/black_30"
+                app:SetRightImg="@drawable/icon_more"
+                app:leftTVText="清除缓存" />
+
+            <View
+                style="@style/limit_line"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/settting_logout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fun_item_height"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selec_itemview"
+                android:gravity="center"
+                android:textColor="@color/main_color_red"
+                android:text="退出登录" />
+
+            <View
+                style="@style/limit_line"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

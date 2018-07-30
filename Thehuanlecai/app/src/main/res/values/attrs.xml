@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomSlidingTabIndicator">
+        <attr name="STIindicatorColor" format="color" />
+        <attr name="STIunderlineColor" format="color" />
+        <attr name="STIdividerColor" format="color" />
+        <attr name="STItextColor" format="color" />
+        <attr name="STIindicatorHeight" format="dimension" />
+        <attr name="STIunderlineHeight" format="dimension" />
+        <attr name="STIdividersPadding" format="dimension" />
+        <attr name="STItabLeftRightPadding" format="dimension" />
+        <attr name="STIscrollOffSet" format="dimension" />
+        <attr name="STItabTextSize" format="dimension" />
+        <attr name="STItabBackground" format="reference" />
+        <attr name="STIshouldExpand" format="boolean" />
+        <attr name="STItextCaps" format="boolean" />
+        <attr name="STItabTopBtmPadding" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SlidingTabLayout">
+        <attr name="indicatorColor" format="color" />
+        <attr name="shouldExpand" format="boolean" />
+        <attr name="STLtabBackground" format="reference" />
+        <attr name="tabBackgroundTextViewId" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="FlowLayout">
+        <attr name="horizontalSpacing" format="dimension" />
+        <attr name="verticalSpacing" format="dimension" />
+    </declare-styleable>
+
+    <!-- 标题栏属性 -->
+    <declare-styleable name="LayoutTitle">
+        <attr name="titleName" format="string" localization="suggested" />
+        <attr name="btnBackVisibility" format="string" />
+        <attr name="btnRightVisibility" format="string" />
+        <attr name="btnRightText" format="string" />
+        <attr name="leftImageSrc" format="reference" />
+        <attr name="rightImageSrc" format="reference" />
+        <attr name="btnLeftText" format="string" />
+    </declare-styleable>
+
+
+    <!-- 广告类型 -->
+    <declare-styleable name="adsView">
+        <attr name="adsType" format="integer" />
+        <attr name="adsHeight" format="string" />
+
+    </declare-styleable>
+
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color"></attr>
+    </declare-styleable>
+
+    <!--标签-->
+    <attr name="item_count" format="integer"></attr>
+    <declare-styleable name="ViewPagerIndicator">
+        <attr name="item_count" />
+    </declare-styleable>
+    <!--loadView-->
+    <declare-styleable name="Dialog">
+        <attr name="DialogTitleAppearance" format="reference" />
+        <attr name="DialogTitleText" format="reference|string" />
+        <attr name="DialogSpotColor" format="reference|color" />
+        <attr name="DialogSpotCount" format="integer" />
+    </declare-styleable>
+
+    <!--取景框-->
+    <declare-styleable name="Viewfinder">
+        <attr name="pwHeight" format="integer"/>
+        <attr name="pwWidth" format="integer"/>
+        <attr name="pwTipText" format="string"/>
+        <attr name="pwTipTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <!--取景框-->
+    <declare-styleable name="ClipImageView">
+        <attr name="civHeight" format="integer" />
+        <attr name="civWidth" format="integer" />
+        <attr name="civTipText" format="string" />
+        <attr name="civTipTextSize" format="dimension" />
+        <attr name="civMaskColor" format="color" />
+        <attr name="civClipPadding" format="dimension" />
+        <attr name="civClipRoundCorner" format="dimension|reference" />
+        <attr name="civClipCircle" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+</resources>

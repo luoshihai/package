@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.cnsunru.common.widget.titlebar.TitleBar
+        android:id="@+id/titleBar"
+        style="@style/BlackBackTitleBarStyle"
+        app:leftVisible="visible"
+        app:title="关于我们" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="30dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:riv_border_color="@color/divide_line_out"
+        app:riv_mutate_background="true"
+        app:riv_oval="true" />
+
+    <com.allen.library.CommonTextView
+        android:id="@+id/itemVersion"
+        style="@style/DefItemStyle"
+        app:cCenterTextString="V1.0"
+        app:cIsCenterAlignLeft="true"
+        app:cLeftTextString="版本号"
+        app:cRightIconResForDrawableRight="@null"
+        app:cShowDividerLineType="top" />
+
+    <com.allen.library.CommonTextView
+        android:id="@+id/itemPhone"
+        style="@style/DefItemStyle"
+        app:cCenterTextString="18000000000"
+        app:cIsCenterAlignLeft="true"
+        app:cLeftTextString="联系电话"
+        app:cShowDividerLineType="both"
+        app:cTopDividerLineMarginLeft="10dp" />
+
+    <com.allen.library.CommonTextView
+        android:id="@+id/itemAbout"
+        style="@style/DefItemStyle"
+        app:cIsCenterAlignLeft="true"
+        app:cLeftTextString="关于我们"
+        app:cRightIconResForDrawableRight="@drawable/icon_more"
+        app:cShowDividerLineType="bottom" />
+</LinearLayout>

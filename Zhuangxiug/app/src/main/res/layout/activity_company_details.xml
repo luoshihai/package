@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_color"
+    android:orientation="vertical">
+
+    <com.cnsunru.common.widget.titlebar.TitleBar
+        android:id="@+id/titleBar"
+        style="@style/BlackBackTitleBarStyle"
+        app:leftVisible="visible"
+        app:title="公司详情" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnAdd"
+        android:layout_below="@+id/titleBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="360dp"
+                >
+
+                <com.bigkoo.convenientbanner.ConvenientBanner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/txtNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/shape_translate_round"
+                    android:text="1/6"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/itemTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="top|left"
+                    android:maxLines="1"
+                    android:text="武汉xxx装饰工程有限公司"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/itemTitleDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="地址: 湖北省武汉市xxxx"
+                    android:textColor="@color/hint_text_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtProductPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="24km"
+                    android:textColor="@color/text5"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View style="@style/limit_line" />
+
+            <View
+                style="@style/limit_line"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/company_icon_design"
+                    android:drawablePadding="5dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="设计方案(2)"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtShowAllPlan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="查看全部"
+                    android:textColor="@color/hint_text_color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View style="@style/limit_line" />
+
+            <com.sunrun.sunrunframwork.weight.ListViewForScroll
+                android:id="@+id/listPlan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:divider="@null"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <View style="@style/limit_line" />
+
+            <View
+                style="@style/limit_line"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/company_icon_info"
+                    android:drawablePadding="5dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="公司简介"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View style="@style/limit_line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:ellipsize="end"
+                android:padding="10dp"
+                android:text="@string/testinfo"
+                android:textColor="@color/main_text_color"
+                android:textSize="14sp" />
+
+            <View
+                style="@style/limit_line"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/company_icon_certificate"
+                    android:drawablePadding="5dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="企业证书"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View style="@style/limit_line" />
+
+            <com.sunrun.sunrunframwork.weight.GridViewForScroll
+                android:id="@+id/gridCertifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:horizontalSpacing="10dp"
+                android:numColumns="2"
+                android:padding="10dp"
+                android:verticalSpacing="10dp" />
+
+            <View style="@style/limit_line" />
+
+            <View
+                style="@style/limit_line"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/company_icon_business"
+                    android:drawablePadding="5dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="工商注册信息"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View style="@style/limit_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <com.cnsunru.common.widget.LabTextView
+                    android:id="@+id/labDate"
+                    style="@style/SimpleLabStyle"
+                    app:contentText="2013-06-04"
+                    app:labText="成立日期:" />
+
+                <com.cnsunru.common.widget.LabTextView
+                    android:id="@+id/labMonry"
+                    android:layout_marginTop="8dp"
+                    style="@style/SimpleLabStyle"
+                    app:contentText="2013-06-04"
+                    app:labText="注册资金:" />
+
+                <com.cnsunru.common.widget.LabTextView
+                    android:id="@+id/labOrgan"
+                    style="@style/SimpleLabStyle"
+                    android:layout_marginTop="8dp"
+                    app:contentText="2013-06-04"
+                    app:labText="登记机关:" />
+                <!--<TextView-->
+                <!--android:id="@+id/itemCompanyDate"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:ellipsize="end"-->
+                <!--android:gravity="top|left"-->
+                <!--android:maxLines="1"-->
+                <!--android:text="成立日期: 2015-5-25"-->
+                <!--android:textColor="@color/hint_text_color"-->
+                <!--android:textSize="15sp" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/itemCompanyMonry"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:ellipsize="end"-->
+                <!--android:lines="1"-->
+                <!--android:text="注册资金: "-->
+                <!--android:textColor="@color/hint_text_color"-->
+                <!--android:textSize="14sp" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/itemCompanyOrgan"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:ellipsize="end"-->
+                <!--android:lines="1"-->
+                <!--android:text="登记机关: "-->
+                <!--android:textColor="@color/hint_text_color"-->
+                <!--android:textSize="14sp" />-->
+            </LinearLayout>
+
+            <View
+                style="@style/limit_line"
+                android:layout_marginBottom="15dp" />
+        </LinearLayout>
+    </ScrollView>
+    <!--<ImageView-->
+    <!--android:id="@+id/btnGoProject"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="20dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:src="@drawable/myproject" />-->
+
+    <Button
+        android:id="@+id/btnAdd"
+        style="@style/fullSubmitBtn"
+        android:layout_alignParentBottom="true"
+        android:text="联系TA帮我做方案" />
+</RelativeLayout>

@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_container">
+
+    <ImageView
+        android:id="@+id/img_left"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:text="@string/register"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true" />
+    <TextView
+        android:id="@+id/text_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:text="@string/register"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone"/>
+</RelativeLayout>
+
+
+<!--<!doctype html>-->
+<!--<html>-->
+<!--<head>-->
+    <!--<meta charset="utf-8">-->
+    <!--<title>发彩网-彩票开奖结果_【开奖最快|预测最准】_福利彩票_体育彩票</title>-->
+    <!--<meta content="发彩网彩票开奖结果查询及走势图【全网开奖最快|预测最准】：双色球,大乐透,福彩3D,时时彩,七星彩,七乐彩,排列3/5等福彩体彩彩票开奖结果,走势图分析,中奖规则,中奖故事,彩票预测资讯是您首选彩票中奖福地。" name="description">-->
+    <!--<meta content=" 福彩体彩彩票开奖查询,中国福利彩票走势图,中国体育彩票开奖结果,彩票网,发彩网" name="keywords">-->
+    <!--<meta name="baidu-site-verification" content="YWtU5XdhVn">-->
+    <!--<link rel="icon" href="http://www.es123.com/favicon.ico">-->
+    <!--<link rel="stylesheet" href="http://www.es123.com/styles/reset.css">-->
+    <!--<link rel="stylesheet" href="https://cdn.bootcss.com/Swiper/4.0.7/css/swiper.min.css">-->
+    <!--<link rel="stylesheet" href="http://www.es123.com/styles/style.css?v=1.5.0">-->
+<!--</head>-->
+<!--<body>-->
+    <!--<div class="logo_navs_box">-->
+        <!--<div class="logo_navs ">-->
+            <!--<a href="http://www.es123.com/" class="logo"></a>-->
+            <!--<div class="nav ">-->
+                <!--<a href="http://www.es123.com/">首页</a>-->
+                <!--<a href="http://www.es123.com/plan/jz/" target="_blank">红人荐彩</a>-->
+                <!--<a href="http://www.es123.com/draw_notice/" target="_blank">开奖公告</a>-->
+                <!--<a href="http://www.es123.com/guide/guide/" target="_blank">帮助中心</a>-->
+                <!--<div class="fixed_block">-->
+                    <!--<a href="#" class="sidebar_animate"> <img src="http://www.es123.com/images/fixed_block.png"> </a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="subnav_box">-->
+        <!--<div class="subnav">-->
+            <!--<span>热门专题：</span>-->
+            <!--<a href="http://www.es123.com/zt/sfc/" target="_blank">胜负彩</a>-->
+            <!--<a href="http://www.es123.com/zt/ssq/" target="_blank">双色球</a>-->
+            <!--<a href="http://www.es123.com/zt/dlt/" target="_blank">大乐透</a>-->
+            <!--<a href="http://www.es123.com/zt/fc3d/" target="_blank">福彩3D</a>-->
+            <!--<a href="http://www.es123.com/zt/qxc/" target="_blank">七星彩</a>-->
+            <!--<a href="http://www.es123.com/zt/qlc/" target="_blank">七乐彩</a>-->
+            <!--<a href="http://www.es123.com/zt/pl3/" target="_blank">排列3</a>-->
+            <!--<a href="http://www.es123.com/zt/pl5/" target="_blank">排列5</a>-->
+            <!--<a href="http://www.es123.com/zt/cqssc/" target="_blank">时时彩</a>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="achievement">-->
+        <!--<span class="title">荐彩战绩：</span>-->
+        <!--<ul>-->
+            <!--<li class="list_text"> <i></i> <a href="http://www.es123.com/plan/jz/2018-07-07/2322763.html" target="_blank">【竞足】周六060 俄罗斯VS克罗地亚</a> <time>07-07<s></s></time> </li>-->
+            <!--<li class="list_text"> <i></i> <a href="http://www.es123.com/plan/pl5/2018-07-07/2322759.html" target="_blank">【排列5】18181期复式直选预测</a> <time>07-07<s></s></time> </li>-->
+            <!--<li class="list_text"> <i></i> <a href="http://www.es123.com/plan/pl3/2018-07-07/2322758.html" target="_blank">【排列3】第18181期排列三杀码过滤推荐</a> <time>07-07<s></s></time> </li>-->
+        <!--</ul>-->
+    <!--</div>-->
+    <!--<div class="layout clearfix">-->
+        <!--<div class="layout_left clearfix">-->
+            <!--<div class="today_articles">-->
+                <!--<div class="block_title">-->
+                    <!--<h1>精华热荐</h1>-->
+                <!--</div>-->
+                <!--<div class="block_articles">-->
+                    <!--<ul>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/plan/jz/2018-07-08/2322770.html" target="_blank" title="">【竞足】周日109 海于格松VS桑纳菲尤尔</a> <time> <span>07-08</span> </time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/plan/jz/2018-07-08/2322769.html" target="_blank" title="">【竞足】周日112 萨普斯堡VS兰赫姆</a> <time> <span>07-08</span> </time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/plan/jz/2018-07-08/2322768.html" target="_blank" title="">【竞足】周日107 厄勒布鲁VS埃尔夫斯堡</a> <time> <span>07-08</span> </time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/plan/jz/2018-07-07/2322763.html" target="_blank" title="">【竞足】周六060 俄罗斯VS克罗地亚</a> <time> <span>07-07</span> <s></s> </time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/plan/jz/2018-07-07/2322762.html" target="_blank" title="">【竞足】周六059 瑞典VS英格兰</a> <time> <span>07-07</span> </time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/plan/jz/2018-07-07/2322761.html" target="_blank" title="">【竞足】周六104 松本山雅VS新泻天鹅</a> <time> <span>07-07</span> </time> </li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="banner" id="slider">-->
+                <!--<ul>-->
+                    <!--<li> <a href="http://www.es123.com/plan/jz/2018-05-24/2322218.html" target="_blank"> <img src="http://image.es123.com/slide/A3B305D7-AFF0-4A67-80A0-E840847F0B69"> </a> </li>-->
+                <!--</ul>-->
+            <!--</div>-->
+            <!--<div class="star_recommend">-->
+                <!--<div class="block_title">-->
+                    <!--<h1>红人荐彩</h1>-->
+                <!--</div>-->
+                <!--<div class="star_article clearfix">-->
+                    <!--<div class="star_list">-->
+                        <!--<div class="star_list_title">-->
+                            <!--<img src="http://www.es123.com/images/shuzicai.png">-->
+                            <!--<span>数字彩专区</span>-->
+                        <!--</div>-->
+                        <!--<div class="star_list_articles">-->
+                            <!--<ul>-->
+                                <!--<li> <i></i> <a href="http://www.es123.com/plan/dlt/2018-07-08/2322767.html" target="_blank" title="">【大乐透】第2018079期前区必杀3胆推荐</a> <time> <span>07-08</span> </time> </li>-->
+                                <!--<li> <i></i> <a href="http://www.es123.com/plan/fc3d/2018-07-08/2322766.html" target="_blank" title="">【福彩3D】第2018182期杀码过滤推荐</a> <time> <span>07-08</span> </time> </li>-->
+                                <!--<li> <i></i> <a href="http://www.es123.com/plan/pl5/2018-07-08/2322765.html" target="_blank" title="">【排列5】18182期复式直选预测</a> <time> <span>07-08</span> </time> </li>-->
+                                <!--<li> <i></i> <a href="http://www.es123.com/plan/fc3d/2018-07-07/2322760.html" target="_blank" title="">【福彩3D】第2018181期杀码过滤推荐</a> <time> <span>07-07</span> </time> </li>-->
+                                <!--<li> <i></i> <a href="http://www.es123.com/plan/pl5/2018-07-07/2322759.html" target="_blank" title="">【排列5】18181期复式直选预测</a> <time> <span>07-07</span> <s></s> </time> </li>-->
+                                <!--<li> <i></i> <a href="http://www.es123.com/plan/pl3/2018-07-07/2322758.html" target="_blank" title="">【排列3】第18181期排列三杀码过滤推荐</a> <time> <span>07-07</span> <s></s> </time> </li>-->
+                                <!--<li> <i></i> <a href="http://www.es123.com/plan/fc3d/2018-07-06/2322752.html" target="_blank" title="">【福彩3D】第2018180期杀码过滤推荐</a> <time> <span>07-06</span> </time> </li>-->
+                                <!--<li> <i></i> <a href="http://www.es123.com/plan/pl5/2018-07-06/2322751.html" target="_blank" title="">【排列5】18180期复式直选预测</a> <time> <span>07-06</span> </time> </li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="thread"></div>-->
+                    <!--<div class="star_list">-->
+                        <!--<div class="star_list_title">-->
+                            <!--<img src="http://www.es123.com/images/jingjicai.png">-->
+                            <!--<span>竞技彩专区</span>-->
+                        <!--</div>-->
+                        <!--<div class="star_list_articles">-->
+                            <!--<ul>-->
+                                <!--<li> <i></i> <a href="http://www.es123.com/plan/jz/2018-07-08/2322770.html" target="_blank" title="">【竞足】周日109 海于格松VS桑纳菲尤尔</a> <time> <span>07-08</span> </time> </li>-->
+                                <!--<li> <i></i> <a href="http://www.es123.com/plan/jz/2018-07-08/2322769.html" target="_blank" title="">【竞足】周日112 萨普斯堡VS兰赫姆</a> <time> <span>07-08</span> </time> </li>-->
+                                <!--<li> <i></i> <a href="http://www.es123.com/plan/jz/2018-07-08/2322768.html" target="_blank" title="">【竞足】周日107 厄勒布鲁VS埃尔夫斯堡</a> <time> <span>07-08</span> </time> </li>-->
+                                <!--<li> <i></i> <a href="http://www.es123.com/plan/jz/2018-07-07/2322763.html" target="_blank" title="">【竞足】周六060 俄罗斯VS克罗地亚</a> <time> <span>07-07</span> <s></s> </time> </li>-->
+                                <!--<li> <i></i> <a href="http://www.es123.com/plan/jz/2018-07-07/2322762.html" target="_blank" title="">【竞足】周六059 瑞典VS英格兰</a> <time> <span>07-07</span> </time> </li>-->
+                                <!--<li> <i></i> <a href="http://www.es123.com/plan/jz/2018-07-07/2322761.html" target="_blank" title="">【竞足】周六104 松本山雅VS新泻天鹅</a> <time> <span>07-07</span> </time> </li>-->
+                                <!--<li> <i></i> <a href="http://www.es123.com/plan/jz/2018-07-06/2322755.html" target="_blank" title="">【竞足】周五058 巴西VS比利时</a> <time> <span>07-06</span> <s></s> </time> </li>-->
+                                <!--<li> <i></i> <a href="http://www.es123.com/plan/jz/2018-07-06/2322754.html" target="_blank" title="">【竞足】周五057 乌拉圭VS法国</a> <time> <span>07-06</span> </time> </li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="recommend_list" style="margin-left: 0px;">-->
+                <!--<div class="block_title">-->
+                    <!--<h1>胜负彩分析</h1>-->
+                    <!--<a href="http://www.es123.com/info/sfc/" target="_blank">更多</a>-->
+                <!--</div>-->
+                <!--<div class="block_articles">-->
+                    <!--<ul>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/info/sfc/2018-06-15/2526570.html" target="_blank" title="">【14场】胜负彩第18075期心水推荐：世界杯稳胆素材多</a> <time>06-15</time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/info/sfc/2018-06-02/2521013.html" target="_blank" title="">【14场】第18073期胜负彩14场推荐：世界杯夺冠热门忙热身</a> <time>06-02</time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/info/sfc/2018-05-28/2519527.html" target="_blank" title="">【14场】第18072期胜负彩14场推荐：时间跨度大 竞猜难度也增大</a> <time>05-28</time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/info/sfc/2018-05-27/2518901.html" target="_blank" title="">【14场】第18071期胜负彩推荐：三联赛主场优势不容忽视</a> <time>05-27</time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/info/sfc/2018-05-24/2518175.html" target="_blank" title="">【14场】第18070期胜负彩推荐：6国联赛组合 大奖机会大</a> <time>05-24</time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/info/sfc/2018-05-24/2518072.html" target="_blank" title="">【竞足】周四009 科林蒂安VS波哥大百万富翁</a> <time>05-24</time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/info/sfc/2018-05-24/2518071.html" target="_blank" title="">【竞足】周四004 拉普拉塔大学生VS蒙得维的亚国民</a> <time>05-24</time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/info/sfc/2018-05-23/2517384.html" target="_blank" title="">【竞足】周三003 厄斯特松德VS天狼星</a> <time>05-23</time> </li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="recommend_list" style="margin-left: 20px;">-->
+                <!--<div class="block_title">-->
+                    <!--<h1>双色球分析</h1>-->
+                    <!--<a href="http://www.es123.com/info/ssq/" target="_blank">更多</a>-->
+                <!--</div>-->
+                <!--<div class="block_articles">-->
+                    <!--<ul>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/info/ssq/2018-07-02/2533231.html" target="_blank" title="">双色球2018076期彩迷独家心水推荐</a> <time>07-02</time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/info/ssq/2018-07-02/2533232.html" target="_blank" title="">双色球2018076期老李说彩推荐心水15红+4蓝复式</a> <time>07-02</time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/info/ssq/2018-07-02/2533233.html" target="_blank" title="">双色球2018076期神彩小巫专家预测</a> <time>07-02</time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/info/ssq/2018-07-02/2533234.html" target="_blank" title="">博彩小生双色球2018076期一语定胆</a> <time>07-02</time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/info/ssq/2018-07-02/2533235.html" target="_blank" title="">神彩飞扬双色球2018076期一语定胆</a> <time>07-02</time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/info/ssq/2018-07-02/2533236.html" target="_blank" title="">玩彩老头双色球2018076期预测本期红球龙头两码</a> <time>07-02</time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/info/ssq/2018-07-02/2533237.html" target="_blank" title="">双色球2018076发彩网彩子佳人首尾号码专家预测</a> <time>07-02</time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/info/ssq/2018-07-02/2533238.html" target="_blank" title="">双色球2018076发彩网一彩即中首尾号码专家推荐</a> <time>07-02</time> </li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="recommend_list" style="margin-left: 0px;">-->
+                <!--<div class="block_title">-->
+                    <!--<h1>大乐透分析</h1>-->
+                    <!--<a href="http://www.es123.com/info/dlt/" target="_blank">更多</a>-->
+                <!--</div>-->
+                <!--<div class="block_articles">-->
+                    <!--<ul>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/info/dlt/2018-07-02/2533201.html" target="_blank" title="">大乐透18075期历史同期号码分析</a> <time>07-02</time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/info/dlt/2018-07-02/2533202.html" target="_blank" title="">第18076期大乐透风雪天霜专家预测</a> <time>07-02</time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/info/dlt/2018-07-02/2533203.html" target="_blank" title="">第18076期大乐透浮生若梦专家预测</a> <time>07-02</time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/info/dlt/2018-07-02/2533205.html" target="_blank" title="">孑愉大乐透18076期后区号码预测</a> <time>07-02</time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/info/dlt/2018-07-02/2533204.html" target="_blank" title="">第18076期大乐透九命神猫号码预测分析（前区+后区）</a> <time>07-02</time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/info/dlt/2018-07-02/2533206.html" target="_blank" title="">一曲求凤大乐透18076期专家预测</a> <time>07-02</time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/info/dlt/2018-07-02/2533207.html" target="_blank" title="">昔落大乐透18076期后区分析</a> <time>07-02</time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/info/dlt/2018-07-02/2533209.html" target="_blank" title="">风无痕大乐透18076期专家后区预测</a> <time>07-02</time> </li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="recommend_list" style="margin-left: 20px;">-->
+                <!--<div class="block_title">-->
+                    <!--<h1>福彩3D分析</h1>-->
+                    <!--<a href="http://www.es123.com/info/fc3d/" target="_blank">更多</a>-->
+                <!--</div>-->
+                <!--<div class="block_articles">-->
+                    <!--<ul>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/info/fc3d/2018-07-02/2533266.html" target="_blank" title="">福彩3D2018176期老李说彩直组选及单注推荐</a> <time>07-02</time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/info/fc3d/2018-07-02/2533265.html" target="_blank" title="">福彩3D2018176期彩迷独家直组选及单注推荐</a> <time>07-02</time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/info/fc3d/2018-07-02/2533267.html" target="_blank" title="">福彩3D2018176期神彩小巫直组选及单注推荐</a> <time>07-02</time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/info/fc3d/2018-07-02/2533268.html" target="_blank" title="">福彩3D2018176期博彩小生走势观察分析</a> <time>07-02</time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/info/fc3d/2018-07-02/2533269.html" target="_blank" title="">福彩3D2018176期神彩飞扬走势观察分析</a> <time>07-02</time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/info/fc3d/2018-07-02/2533270.html" target="_blank" title="">福彩3D2018176期玩彩老头走势观察分析</a> <time>07-02</time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/info/fc3d/2018-07-02/2533271.html" target="_blank" title="">福彩3D第2018176期彩子佳人专家预测 胆码看5 绝杀1</a> <time>07-02</time> </li>-->
+                        <!--<li> <i class="dot"></i> <a href="http://www.es123.com/info/fc3d/2018-07-02/2533272.html" target="_blank" title="">福彩3D第2018176期一彩即中预测 胆码看1 绝杀6</a> <time>07-02</time> </li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="layout_right">-->
+            <!--<div class="draw_index">-->
+                <!--<div class="block_title">-->
+                    <!--<h1>开奖公告</h1>-->
+                <!--</div>-->
+                <!--<div class="draw_index_tab">-->
+                    <!--<ul>-->
+                        <!--<li class="active">数字开奖</li>-->
+                        <!--<li>竞技开奖</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+                <!--<div class="draw_border">-->
+                    <!--<div class="draw_list">-->
+                        <!--<div class="draw_list_li">-->
+                            <!--<div class="title_1l">-->
+                                <!--<h6><a href="http://www.es123.com/zt/ssq/" target="_blank">双色球</a> </h6>-->
+                                <!--<span>2018078期</span>-->
+                                <!--<span class="time">2018-07-08</span>-->
+                            <!--</div>-->
+                            <!--<div class="draw_ball_2l">-->
+                                <!--<ul>-->
+                                    <!--<li>03</li>-->
+                                    <!--<li>10</li>-->
+                                    <!--<li>14</li>-->
+                                    <!--<li>17</li>-->
+                                    <!--<li>18</li>-->
+                                    <!--<li>30</li>-->
+                                    <!--<li style="background: #4C9BEF;">12</li>-->
+                                <!--</ul>-->
+                                <!--<a href="http://www.es123.com/zt/ssq/" target="_blank">详情</a>-->
+                            <!--</div>-->
+                            <!--<div class="jackpot_3l">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="draw_list_li">-->
+                            <!--<div class="title_1l">-->
+                                <!--<h6><a href="http://www.es123.com/zt/dlt/" target="_blank">大乐透</a> </h6>-->
+                                <!--<span>18078期</span>-->
+                                <!--<span class="time">2018-07-07</span>-->
+                            <!--</div>-->
+                            <!--<div class="draw_ball_2l">-->
+                                <!--<ul>-->
+                                    <!--<li>07</li>-->
+                                    <!--<li>11</li>-->
+                                    <!--<li>12</li>-->
+                                    <!--<li>22</li>-->
+                                    <!--<li>30</li>-->
+                                    <!--<li style="background: #4C9BEF;">03</li>-->
+                                    <!--<li style="background: #4C9BEF;">06</li>-->
+                                <!--</ul>-->
+                                <!--<a href="http://www.es123.com/zt/dlt/" target="_blank">详情</a>-->
+                            <!--</div>-->
+                            <!--<div class="jackpot_3l">-->
+                                <!--<span>奖池滚存：<strong>59亿9900万</strong>元</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="draw_list_li">-->
+                            <!--<div class="title_1l">-->
+                                <!--<h6><a href="http://www.es123.com/zt/fc3d/" target="_blank">福彩3D</a> </h6>-->
+                                <!--<span>2018182期</span>-->
+                                <!--<span class="time">2018-07-08</span>-->
+                            <!--</div>-->
+                            <!--<div class="draw_ball_2l">-->
+                                <!--<ul>-->
+                                    <!--<li>3</li>-->
+                                    <!--<li>2</li>-->
+                                    <!--<li>9</li>-->
+                                <!--</ul>-->
+                                <!--<span>试机号: <strong style="color:#4C9BEF;letter-spacing: 2px;">102</strong></span>-->
+                                <!--<a href="http://www.es123.com/zt/fc3d/" target="_blank">详情</a>-->
+                            <!--</div>-->
+                            <!--<div class="jackpot_3l">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="draw_list_li">-->
+                            <!--<div class="title_1l">-->
+                                <!--<h6><a href="http://www.es123.com/zt/cqssc/" target="_blank">时时彩</a> </h6>-->
+                                <!--<span>20180708102期</span>-->
+                                <!--<span class="time">2018-07-08</span>-->
+                            <!--</div>-->
+                            <!--<div class="draw_ball_2l">-->
+                                <!--<ul>-->
+                                    <!--<li>2</li>-->
+                                    <!--<li>1</li>-->
+                                    <!--<li>5</li>-->
+                                    <!--<li>6</li>-->
+                                    <!--<li>4</li>-->
+                                <!--</ul>-->
+                                <!--<a href="http://www.es123.com/zt/cqssc/" target="_blank">详情</a>-->
+                            <!--</div>-->
+                            <!--<div class="jackpot_3l">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="draw_list_li">-->
+                            <!--<div class="title_1l">-->
+                                <!--<h6><a href="http://www.es123.com/zt/qxc/" target="_blank">七星彩</a> </h6>-->
+                                <!--<span>18078期</span>-->
+                                <!--<span class="time">2018-07-08</span>-->
+                            <!--</div>-->
+                            <!--<div class="draw_ball_2l">-->
+                                <!--<ul>-->
+                                    <!--<li>3</li>-->
+                                    <!--<li>4</li>-->
+                                    <!--<li>8</li>-->
+                                    <!--<li>8</li>-->
+                                    <!--<li>0</li>-->
+                                    <!--<li>1</li>-->
+                                    <!--<li>4</li>-->
+                                <!--</ul>-->
+                                <!--<a href="http://www.es123.com/zt/qxc/" target="_blank">详情</a>-->
+                            <!--</div>-->
+                            <!--<div class="jackpot_3l">-->
+                                <!--<span>奖池滚存：<strong>634万1609</strong>元</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="draw_list_li">-->
+                            <!--<div class="title_1l">-->
+                                <!--<h6><a href="http://www.es123.com/zt/qlc/" target="_blank">七乐彩</a> </h6>-->
+                                <!--<span>2018078期</span>-->
+                                <!--<span class="time">2018-07-06</span>-->
+                            <!--</div>-->
+                            <!--<div class="draw_ball_2l">-->
+                                <!--<ul>-->
+                                    <!--<li>04</li>-->
+                                    <!--<li>14</li>-->
+                                    <!--<li>15</li>-->
+                                    <!--<li>16</li>-->
+                                    <!--<li>24</li>-->
+                                    <!--<li>29</li>-->
+                                    <!--<li>30</li>-->
+                                    <!--<li style="background: #4C9BEF;">06</li>-->
+                                <!--</ul>-->
+                                <!--<a href="http://www.es123.com/zt/qlc/" target="_blank">详情</a>-->
+                            <!--</div>-->
+                            <!--<div class="jackpot_3l">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="draw_list_li">-->
+                            <!--<div class="title_1l">-->
+                                <!--<h6><a href="http://www.es123.com/zt/pl3/" target="_blank">排列3</a> </h6>-->
+                                <!--<span>18182期</span>-->
+                                <!--<span class="time">2018-07-08</span>-->
+                            <!--</div>-->
+                            <!--<div class="draw_ball_2l">-->
+                                <!--<ul>-->
+                                    <!--<li>4</li>-->
+                                    <!--<li>0</li>-->
+                                    <!--<li>0</li>-->
+                                <!--</ul>-->
+                                <!--<a href="http://www.es123.com/zt/pl3/" target="_blank">详情</a>-->
+                            <!--</div>-->
+                            <!--<div class="jackpot_3l">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="draw_list_li">-->
+                            <!--<div class="title_1l">-->
+                                <!--<h6><a href="http://www.es123.com/zt/pl5/" target="_blank">排列5</a> </h6>-->
+                                <!--<span>18182期</span>-->
+                                <!--<span class="time">2018-07-08</span>-->
+                            <!--</div>-->
+                            <!--<div class="draw_ball_2l">-->
+                                <!--<ul>-->
+                                    <!--<li>4</li>-->
+                                    <!--<li>0</li>-->
+                                    <!--<li>0</li>-->
+                                    <!--<li>1</li>-->
+                                    <!--<li>1</li>-->
+                                <!--</ul>-->
+                                <!--<a href="http://www.es123.com/zt/pl5/" target="_blank">详情</a>-->
+                            <!--</div>-->
+                            <!--<div class="jackpot_3l">-->
+                                <!--<span>奖池滚存：<strong>2亿4111万</strong>元</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="draw_list_li">-->
+                            <!--<div class="title_1l">-->
+                                <!--<h6><a href="http://www.es123.com/l15x5/" target="_blank">15选5</a> </h6>-->
+                                <!--<span>2018182期</span>-->
+                                <!--<span class="time">2018-07-08</span>-->
+                            <!--</div>-->
+                            <!--<div class="draw_ball_2l">-->
+                                <!--<ul>-->
+                                    <!--<li>02</li>-->
+                                    <!--<li>04</li>-->
+                                    <!--<li>05</li>-->
+                                    <!--<li>07</li>-->
+                                    <!--<li>10</li>-->
+                                <!--</ul>-->
+                                <!--<a href="http://www.es123.com/l15x5/" target="_blank">详情</a>-->
+                            <!--</div>-->
+                            <!--<div class="jackpot_3l">-->
+                                <!--<span>奖池滚存：<strong>469万5316</strong>元</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="draw_list" style="display: none;">-->
+                        <!--<div class="draw_list_li draw_compete">-->
+                            <!--<div class="title_1l">-->
+                                <!--<h6> <a href="http://www.es123.com/zt/sfc/" target="_blank">胜负彩(任9)</a> </h6>-->
+                                <!--<span>2018078期</span>-->
+                                <!--<span class="time">2018-07-04</span>-->
+                            <!--</div>-->
+                            <!--<div class="draw_ball_2l">-->
+                                <!--<ul>-->
+                                    <!--<li>3</li>-->
+                                    <!--<li>1</li>-->
+                                    <!--<li>3</li>-->
+                                    <!--<li>1</li>-->
+                                    <!--<li>3</li>-->
+                                    <!--<li>3</li>-->
+                                    <!--<li>3</li>-->
+                                    <!--<li>1</li>-->
+                                    <!--<li>3</li>-->
+                                    <!--<li>0</li>-->
+                                    <!--<li>0</li>-->
+                                    <!--<li>3</li>-->
+                                    <!--<li>3</li>-->
+                                    <!--<li>1</li>-->
+                                <!--</ul>-->
+                            <!--</div>-->
+                            <!--<div class="jackpot_3l">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="draw_list_li draw_compete">-->
+                            <!--<div class="title_1l">-->
+                                <!--<h6> <a href="http://www.es123.com/bq6/" target="_blank">6场半全场</a> </h6>-->
+                                <!--<span>2018084期</span>-->
+                                <!--<span class="time">2018-07-08</span>-->
+                            <!--</div>-->
+                            <!--<div class="draw_ball_2l">-->
+                                <!--<ul>-->
+                                    <!--<li>0</li>-->
+                                    <!--<li>0</li>-->
+                                    <!--<li>0</li>-->
+                                    <!--<li>0</li>-->
+                                    <!--<li>0</li>-->
+                                    <!--<li>0</li>-->
+                                    <!--<li>1</li>-->
+                                    <!--<li>1</li>-->
+                                    <!--<li>3</li>-->
+                                    <!--<li>3</li>-->
+                                    <!--<li>1</li>-->
+                                    <!--<li>0</li>-->
+                                <!--</ul>-->
+                            <!--</div>-->
+                            <!--<div class="jackpot_3l">-->
+                                <!--<span>一等奖：12注，单注 <strong>1万3264</strong>元 </span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="draw_list_li draw_compete">-->
+                            <!--<div class="title_1l">-->
+                                <!--<h6> <a href="http://www.es123.com/jq4/" target="_blank">4场进球</a> </h6>-->
+                                <!--<span>2018089期</span>-->
+                                <!--<span class="time">2018-07-08</span>-->
+                            <!--</div>-->
+                            <!--<div class="draw_ball_2l">-->
+                                <!--<ul>-->
+                                    <!--<li>0</li>-->
+                                    <!--<li>2</li>-->
+                                    <!--<li>1</li>-->
+                                    <!--<li>2</li>-->
+                                    <!--<li>0</li>-->
+                                    <!--<li>2</li>-->
+                                    <!--<li>1</li>-->
+                                    <!--<li>1</li>-->
+                                <!--</ul>-->
+                            <!--</div>-->
+                            <!--<div class="jackpot_3l">-->
+                                <!--<span>一等奖：609注，单注 <strong>4397</strong>元 </span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="footer ">-->
+        <!--<div class="footer_her">-->
+            <!--<h6>友情链接 </h6>-->
+        <!--</div>-->
+        <!--<div class="friendLink">-->
+            <!--<span>推荐网站 &gt; </span>-->
+            <!--<ul>-->
+                <!--<li><a target="_blank" href="http://baoding.bitauto.com/">保定汽车网</a></li>-->
+                <!--<li>|</li>-->
+                <!--<li><a target="_blank" href="http://www.3dmgame.com/">单机游戏</a></li>-->
+                <!--<li>|</li>-->
+                <!--<li><a target="_blank" href="http://www.ruan8.com/">软件下载</a></li>-->
+                <!--<li>|</li>-->
+                <!--<li><a target="_blank" href="http://www.glzy8.com/">管理资源吧</a></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+        <!--<div class="copyright">-->
+            <!--<p> <a href="http://www.es123.com/draw_notice/">开奖公告</a> | <a href="http://www.es123.com/info/ssq/">双色球预测</a> | <a href="http://www.es123.com/info/dlt/">大乐透预测</a> | <a href="http://www.es123.com/guide/guide/">新手专区 </a> | <a href="http://www.es123.com/ssq/xyxhq/">双色球工具</a> | <a href="http://www.es123.com/dlt/xyxhq/">大乐透工具</a> | <a href="http://www.es123.com/fc3d/sjhfx/">福彩3D工具</a> | </p>-->
+            <!--<p>商务QQ：<span style="color:#f13131;text-decoration: underline;">2603036921</span>&nbsp;&nbsp;传真：<span style="color:#f13131;text-decoration: underline;">010-53207801</span>&nbsp;&nbsp;商务邮件：<span style="color:#f13131;text-decoration: underline;">simple_314@126.com</span></p>-->
+            <!--<p><span>2016-2017 ©发彩网 皖ICP备17009285号-1 </span><span style="color:#f13131;">温馨提醒：购买彩票有风险，在线投注须谨慎 </span> 不向未满18周岁的青少年出售彩票</p>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<script src="http://www.es123.com/scripts/jquery-1.7.1.min.js"></script>-->
+    <!--<script type="text/javascript" src="https://cdn.bootcss.com/Swiper/4.0.7/js/swiper.min.js"></script>-->
+    <!--<script src="http://www.es123.com/scripts/tools.js"></script>-->
+    <!--<script src="http://www.es123.com/scripts/jquery_name.js"></script>-->
+    <!--<script src="http://www.es123.com/scripts/unslider.min.js"></script>-->
+    <!--<script>-->
+        <!--$(function () {-->
+        <!--/*slider*/-->
+        <!--$('#slider').unslider({-->
+        <!--//dots: true-->
+        <!--});-->
+        <!--/*开奖结果tab*/-->
+        <!--$('.draw_index_tab li').on("mouseover", function () {-->
+        <!--var _index = $(this).index();-->
+        <!--$(this).addClass('active').siblings().removeClass();-->
+        <!--$('.draw_border>div').eq(_index).show().siblings().hide();-->
+        <!--}).eq(0).addClass('active');-->
+        <!--/*红人日期*/-->
+        <!--var jrtime = new Date();-->
+        <!--var month = jrtime.getMonth() + 1;     //月-->
+        <!--var day = jrtime.getDate();            //日-->
+        <!--if (month < 10) {-->
+        <!--month = "0" + month;-->
+        <!--}-->
+        <!--if (day < 10) {-->
+        <!--day = "0" + day;-->
+        <!--}-->
+        <!--var jtdata = month + "-" + day;-->
+        <!--$(".star_list_articles").find("time").each(function () {-->
+        <!--if (new Date(jtdata).getTime() - new Date($(this).text()).getTime() == 0) {-->
+        <!--$(this).children("span").html("今日")-->
+        <!--}-->
+        <!--})-->
+        <!--})-->
+    <!--</script>-->
+    <!--<script>-->
+        <!--var _hmt = _hmt || [];-->
+        <!--(function () {-->
+        <!--var hm = document.createElement("script");-->
+        <!--hm.src = "//hm.baidu.com/hm.js?362b15393c3fe2f94a4e4ec9c6fec1b1";-->
+        <!--var s = document.getElementsByTagName("script")[0];-->
+        <!--s.parentNode.insertBefore(hm, s);-->
+        <!--})();-->
+    <!--</script>-->
+<!--</body>-->
+<!--<0/html>-->

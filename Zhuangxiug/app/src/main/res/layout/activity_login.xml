@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_bg"
+        android:orientation="vertical">
+
+        <!--<com.cnsunrun.common.widget.titlebar.TitleBar-->
+        <!--android:id="@+id/titleBar"-->
+        <!--style="@style/BlackBackTitleBarStyle"-->
+        <!--app:fitStatusBar="true"-->
+        <!--app:rightText="注册"-->
+        <!--app:rightTextColor="@color/white"-->
+        <!--app:rightVisible="visible"-->
+        <!--app:title="登录" />-->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="74dp"
+            android:src="@drawable/logo" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="50dp">
+
+            <EditText
+                android:id="@+id/edit_mobile"
+                style="@style/edit_text_style"
+                android:drawableRight="@drawable/login_icon_phone"
+                android:hint="手机号Telephone"
+                android:paddingLeft="24dp"
+                android:inputType="phone"
+                android:paddingRight="24dp" />
+
+            <EditText
+                android:id="@+id/edit_assword"
+                style="@style/edit_text_style"
+                android:layout_marginTop="10dp"
+                android:drawableRight="@drawable/login_icon_psw"
+                android:hint="密码Password"
+                android:inputType="textPassword"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp" />
+
+
+            <TextView
+                android:id="@+id/btn_forgetfwd"
+                style="@style/textView_style_14sp"
+                android:padding="5dp"
+                android:text="@string/forgat_password"
+                android:textColor="@color/text4"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_login"
+                style="@style/submitBtn"
+                android:text="登录" />
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btn_register"
+                style="@style/borderSubmitBtn"
+                android:layout_marginTop="10dp"
+                android:text="注册" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_toLeftOf="@+id/txtThirdPartLoginTips"
+                    android:background="#e61719" />
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@+id/txtThirdPartLoginTips"
+                    android:background="#e61719" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/txtThirdPartLoginTips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="其他方式"
+                    android:textColor="@color/hint_text_color"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:padding="20dp">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/btnWXLogin"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginRight="76dp"-->
+                    <!--android:scaleType="fitXY"-->
+                    <!--android:src="@drawable/login_btn_wechat" />-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:scaleType="fitXY"-->
+                    <!--android:src="@drawable/login_btn_qq" />-->
+
+            <!--</LinearLayout>-->
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

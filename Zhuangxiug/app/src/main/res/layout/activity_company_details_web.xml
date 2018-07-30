@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_color"
+    android:orientation="vertical">
+
+    <com.cnsunru.common.widget.titlebar.TitleBar
+        android:id="@+id/title_bar"
+        style="@style/BlackBackTitleBarStyle"/>
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:overScrollMode="never" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y98"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+
+        <Button
+            android:id="@+id/tv_atonce"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="联系TA帮我做方案"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_fullsubmit_selector"
+            />
+    </LinearLayout>
+</LinearLayout>

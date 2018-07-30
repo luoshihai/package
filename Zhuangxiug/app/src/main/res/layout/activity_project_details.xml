@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_color"
+    android:orientation="vertical">
+
+    <com.cnsunru.common.widget.titlebar.TitleBar
+        android:id="@+id/titleBar"
+        style="@style/BlackBackTitleBarStyle"
+        app:fitStatusBar="true"
+        app:title="详细工程清单" />
+
+    <TextView
+        android:id="@+id/txtLocation"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/home_icon_location_n"
+        android:drawablePadding="4dp"
+        android:drawableRight="@drawable/icon_more"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="所在城市: 定位中.." />
+
+    <View style="@style/limit_line" />
+
+    <ru.noties.scrollable.ScrollableLayout
+        android:id="@+id/scrollableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:scrollable_autoMaxScroll="true"
+        app:scrollable_defaultCloseUp="true"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!--android:layout_width="match_parent"-->
+            <!--android:background="@drawable/me_bg"-->
+            <!--android:layout_height="150dp">-->
+            <!---->
+            <!--</RelativeLayout>-->
+            <include layout="@layout/include_project_details_head" />
+        </LinearLayout>
+
+        <com.cnsunru.common.widget.BoxLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal"
+            app:box_Border="bottom">
+
+            <TextView
+                style="@style/textView_style_14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="切换显示方式" />
+
+            <ImageView
+                android:id="@+id/tableMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/project_icon_table_c" />
+
+            <ImageView
+                android:id="@+id/imgMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/project_icon_img_n" />
+        </com.cnsunru.common.widget.BoxLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="40dp"
+
+            android:layout_height="match_parent" />
+    </ru.noties.scrollable.ScrollableLayout>
+</LinearLayout>

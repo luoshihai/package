@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.saadsdasd.niuniu">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.huaren.zuqiujinqiu.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <permission
+        android:name="android.permission.FLASHLIGHT"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+    <application
+
+        android:name="com.saadsdasd.niuniu.SampleApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/chaoji"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Main2Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.saadsdasd.niuniu.activity.MyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.saadsdasd.niuniu.activity.TabTwoDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.saadsdasd.niuniu.activity.ForecastActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.saadsdasd.niuniu.activity.ForecastResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.saadsdasd.niuniu.activity.DayBallActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.saadsdasd.niuniu.activity.WebActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.saadsdasd.niuniu.activity.WebBrowserActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.saadsdasd.niuniu.activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.saadsdasd.niuniu.activity.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.saadsdasd.niuniu.activity.HotListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.saadsdasd.niuniu.activity.CommentDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.saadsdasd.niuniu.activity.PersonInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.saadsdasd.niuniu.activity.UpdateNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.saadsdasd.niuniu.activity.UpdatePWDActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.saadsdasd.niuniu.activity.MyNoticeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.saadsdasd.niuniu.activity.LotteryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.saadsdasd.niuniu.activity.LotteryFianlActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.saadsdasd.niuniu.activity.HistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.saadsdasd.niuniu.activity.MyIntegration"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.saadsdasd.niuniu.activity.NewsSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.saadsdasd.niuniu.activity.ForecastTypeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.saadsdasd.niuniu.activity.NoticeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.saadsdasd.niuniu.activity.LotteryDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.saadsdasd.niuniu.activity.Lotteryfinal2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.saadsdasd.niuniu.activity.InformationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.saadsdasd.niuniu.activity.MatchWebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.saadsdasd.niuniu.activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.saadsdasd.niuniu.activity.MyCaptureActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <!-- &lt;!&ndash; Required SDK核心功能&ndash;&gt; -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.huaren.zuqiujinqiu" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.bugly.beta.ui.BetaActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

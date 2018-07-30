@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_color"
+    android:orientation="vertical"
+    >
+
+    <com.cnsunru.common.widget.titlebar.TitleBar
+        style="@style/BlackBackTitleBarStyle"
+        app:rightText="登录"
+        android:id="@+id/titleBar"
+        app:rightVisible="visible"
+        app:rightTextColor="@color/text4"
+        app:title="注册" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/stroke_top_and_bottom_line_drawable"
+        android:layout_marginTop="10dp"
+        android:divider="@drawable/divider_inner_drawable"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+
+        <com.cnsunru.common.widget.edittext.EditView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="#fff"
+            android:id="@+id/editPhone"
+            app:hintText="请输入手机号"
+            app:inputType="number"
+            app:maxLength="11"
+            app:rightAction="clearAll"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <com.cnsunru.common.widget.edittext.EditView
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:id="@+id/editCode"
+                app:hintText="请输入验证码"
+                app:inputType="number"
+                app:maxLength="8" />
+
+            <com.cnsunru.common.widget.RoundButton
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:lines="1"
+                android:id="@+id/btnGetCode"
+                android:text="获取验证码"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                app:btnCornerRadius="@dimen/buttons_corner_radius"
+                app:btnSolidColor="@color/submit_btn_bg" />
+        </LinearLayout>
+
+
+        <com.cnsunru.common.widget.edittext.EditView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="#fff"
+            app:hintText="请设置6-12位密码"
+            app:inputType="password"
+            app:maxLength="12"
+            android:id="@+id/editPassword"
+            app:rightAction="password"
+            app:rightImg="@mipmap/ic_launcher_round" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        style="@style/submitBtn"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="确认"
+        android:textSize="18sp"
+        android:id="@+id/submit"
+        />
+
+
+</LinearLayout>

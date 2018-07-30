@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="id_stickynavlayout_topview" type="id" />
+    <item name="id_stickynavlayout_viewpager" type="id" />
+    <item name="id_stickynavlayout_indicator" type="id" />
+    <item name="id_stickynavlayout_innerscrollview" type="id" />
+
+    <declare-styleable name="StickNavLayout">
+        <!--默认是否悬停tab-->
+        <attr name="isStickNav" format="boolean" />
+        <!--距离悬浮的位置-->
+        <attr name="stickOffset" format="dimension" />
+    </declare-styleable>
+</resources>

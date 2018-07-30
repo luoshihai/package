@@ -1,0 +1,25 @@
+<resources>
+    <declare-styleable name="ItemText">
+        <attr name="leftText" format="string"/>
+        <attr name="rightText" format="string"/>
+        <attr name="apppendText" format="string"/>
+        <attr name="leftcolor" format="color"/>
+        <attr name="rightcolor" format="color"/>
+        <attr name="appendcolor" format="color"/>
+        <attr name="showIV" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="ProgressLine">
+        <attr name="progress" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="JumpItem">
+        <attr name="title" format="string"/>
+        <attr name="Jump" format="boolean"/>
+        <attr name="colortitle" format="color"/>
+        <attr name="colormsg" format="color"/>
+        <attr name="msg" format="string"/>
+    </declare-styleable>
+</resources>

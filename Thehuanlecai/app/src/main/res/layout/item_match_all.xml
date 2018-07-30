@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:id="@+id/ll_match">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_match_iv1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/wjx"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/tv_match_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@+id/tv_match_text3"
+            android:text="印尼甲"
+            android:textColor="@color/theme_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_match_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="23"
+            android:textColor="@color/green"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_match_text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_match_text3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="1-0"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_match_text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_match_text2"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/tv_match_text5"
+            android:text="球队甲"
+            android:textColor="@color/font_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_match_text6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_match_text2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv_match_text5"
+            android:text="球队乙"
+            android:textColor="@color/font_black"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/iv_match_logo1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/ssq"
+            android:layout_toLeftOf="@+id/tv_match_text4"
+            android:layout_below="@+id/tv_match_text2"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"/>
+        <ImageView
+            android:id="@+id/iv_match_logo2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/ssq"
+            android:layout_toRightOf="@+id/tv_match_text6"
+            android:layout_below="@+id/tv_match_text2"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"/>
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color"
+            android:layout_below="@+id/iv_match_logo2"
+            android:layout_marginTop="20dp"></View>
+        <TextView
+            android:id="@+id/tv_match_text10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="直播"
+            android:textSize="14sp"
+            android:textColor="@color/green1"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/video"
+            android:layout_toLeftOf="@+id/tv_match_text10"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="5dp"/>
+    </RelativeLayout>
+</LinearLayout>

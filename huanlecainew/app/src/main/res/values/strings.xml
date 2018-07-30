@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">360彩票</string>
+    <string name="app_id">980059</string>
+
+    <!--显示字下面的四个组的名字-->
+    <string name="app_table_4">设置</string>
+    <string name="app_table_3">聊天</string>
+    <string name="app_table_2">足球</string>
+    <string name="app_table_1">首页</string>
+
+
+    <!--四个TABLE 显示  或者 隐藏，  输入显示显示出来， 输入隐藏 界面消失-->
+    <!--首页， 足球， 聊天，设置 -->
+    <string name="app_shouye">显示</string>
+    <string name="app_zuqiu">显示</string>
+    <string name="app_liaotian">显示</string>
+    <string name="app_shezhi">显示</string>
+
+    <!--全部， 竟足 ，中超-->
+    <string name="app_quanbu">显示</string>
+    <string name="app_jingzhu">显示</string>
+    <string name="app_zhongchao">显示</string>
+
+
+    <!--彩票分析 ，彩票公告， 新闻公告-->
+    <string name="app_caipiaofenxi">隐藏</string>
+    <string name="app_caipiaozixun">隐藏</string>
+    <string name="app_xinwengonggao">隐藏</string>
+
+    <!--大乐透 ，双色球 ，胜负彩， 七乐彩， 福彩3D ， 排列三 ，排列五 显示隐藏-->
+    <string name="app_大乐透">显示</string>
+    <string name="app_双色球">显示</string>
+    <string name="app_胜负彩">显示</string>
+    <string name="app_七乐彩">显示</string>
+    <string name="app_福彩3D">显示</string>
+    <string name="app_排列三">显示</string>
+    <string name="app_排列五">显示</string>
+
+    <!--上面的轮播图，可以控制、-->
+    <string name="lunbotu">显示</string>
+
+    <!--设置界面的小的条目 8个 -->
+    <string name="背景">隐藏</string>
+    <string name="我的消息">显示</string>
+    <string name="开奖信息">显示</string>
+    <string name="我的积分">显示</string>
+    <string name="消息推送">显示</string>
+    <string name="检查版本更新">显示</string>
+    <string name="清除缓存">显示</string>
+    <string name="退出登录">显示</string>
+
+</resources>

@@ -1,0 +1,106 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao' // apply plugin
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "com.footbal.faaafddfd"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 4
+        versionName "1.6"
+        multiDexEnabled true
+
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a'
+//            ndk{abiFilters "armeabi"}
+        }
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "96de609f1f6302757e396c52", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default" //暂时填写默认值即可.
+        ]
+
+
+
+    }
+    buildTypes {
+        release {
+            multiDexEnabled  true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    // add library
+//    compile 'com.android.support:appcompat-v7:25.3.1'
+//    compile 'com.android.support:support-v4:25.3.1'
+//    compile 'com.android.support:design:25.3.1'
+//    compile 'com.android.support:recyclerview-v7:25.3.1'
+
+    implementation 'com.android.support:appcompat-v7:26.0.0-beta1'
+    implementation 'com.android.support:design:25.0.0-beta1'
+    implementation 'com.android.support:support-v4:26.0.0-beta1'
+    implementation 'com.android.support:recyclerview-v7:26.0.0-beta1'
+    compile 'com.hannesdorfmann.mosby3:mvp:3.0.3'
+    compile 'com.hannesdorfmann.mosby3:viewstate:3.0.3'
+    compile 'com.hannesdorfmann.mosby3:mvp-lce:3.0.3'
+
+    compile 'com.squareup.retrofit2:retrofit:2.2.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    compile 'com.roughike:bottom-bar:2.1.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.mikhaellopez:circularimageview:3.0.2'
+    compile 'org.greenrobot:greendao:3.2.2'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha8'
+    compile 'jp.wasabeef:glide-transformations:2.0.1'
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.1'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+
+    compile 'io.reactivex:rxjava:1.1.0'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.2.0'
+
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.squareup.okhttp3:okhttp:3.8.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+
+
+    //WEBVIEW  腾讯的 ,
+    //极光推送
+    compile 'cn.jiguang.sdk:jpush:3.0.9'
+    compile 'cn.jiguang.sdk:jcore:1.1.7'
+    // 此处以JCore 1.1.7 版本为例。
+    compile 'com.just.agentweb:agentweb:4.0.2' // (必选)
+//    OKGO网络请求
+    compile('com.lzy.net:okgo:3.0.4') {
+        exclude module: "okio"
+    }
+
+    implementation ('com.github.luoshihai:CasePackage:3.7'){
+        exclude group :"com.google.code.gson"
+        exclude module: "okio"
+    }
+
+
+    compile 'com.umeng.sdk:common:1.5.3'
+    //PushSDK必须依赖utdid库，所以需要加入对应依赖
+    compile 'com.umeng.sdk:utdid:1.1.5.3'
+    //PushSDK
+    compile 'com.umeng.sdk:push:4.2.0'
+
+}
+

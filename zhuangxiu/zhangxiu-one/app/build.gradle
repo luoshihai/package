@@ -1,0 +1,100 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'lin'
+            keyPassword '123456'
+            storeFile file('zhuangxiu.jks')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    defaultConfig {
+        applicationId "com.jyt.suou"
+        minSdkVersion 17
+        targetSdkVersion 22
+        versionCode 2
+        versionName "2.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.config
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a', 'x86'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "c4093493584d45697eeb52ee", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile files('libs/AMap3DMap_5.5.0_AMapSearch_5.5.0_20171107.jar')
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'com.aliyun.dpa:oss-android-sdk:2.4.5'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.squareup.okio:okio:1.9.0'
+    compile 'com.nex3z:flow-layout:1.1.0'
+    compile 'ch.ielse:switchbutton:1.0.0'
+    compile 'com.android.support:design:25.1.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.android.support:recyclerview-v7:25.1.0'
+    compile 'com.zhy:okhttputils:2.6.2'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    compile 'com.orhanobut:hawk:2.0.1'
+    compile 'com.lcodecorex:tkrefreshlayout:1.0.7'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'jp.wasabeef:glide-transformations:2.0.2'
+    compile 'cn.bingoogolapple:bga-banner:2.1.7@aar'
+    compile 'org.jetbrains:annotations-java5:15.0'
+    compile 'cn.aigestudio.datepicker:DatePicker:2.2.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'cn.jiguang.sdk:jpush:3.0.9'  // 此处以JPush 3.0.9 版本为例。
+    compile 'cn.jiguang.sdk:jcore:1.1.7'  // 此处以JCore 1.1.7 版本为例。
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    compile ('com.github.luoshihai:CasePackage:3.5'){
+        exclude group: 'com.android.support'
+    }
+
+    // 此处以JCore 1.1.7 版本为例。
+    compile 'com.just.agentweb:agentweb:4.0.2' // (必选)
+//    OKGO网络请求
+    compile('com.lzy.net:okgo:3.0.4') {
+        exclude module: "okio"
+    }
+    //二维码识别.
+    compile 'cn.yipianfengye.android:zxing-library:2.2'
+
+}

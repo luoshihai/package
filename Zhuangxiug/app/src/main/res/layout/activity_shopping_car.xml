@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_color"
+    android:orientation="vertical">
+
+    <com.cnsunru.common.widget.titlebar.TitleBar
+        style="@style/BlackBackTitleBarStyle"
+        app:rightText="编辑"
+        app:rightTextColor="@color/white"
+        app:rightVisible="visible"
+        app:title="购物车"
+        />
+
+    <include layout="@layout/view_refreshable_recyclerview" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divide_line_out" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全选"
+            android:textColor="@color/main_text_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="合计: $ 1200"
+            android:textColor="@color/main_text_color"
+            android:textSize="15sp" />
+
+        <com.cnsunru.common.widget.RoundButton
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="-2dp"
+            android:layout_marginTop="-2dp"
+            android:clickable="true"
+            android:text="结算(4)"
+            android:textColor="#fff"
+            app:btnSolidColor="#f00" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_item_yuce">
+    <TextView
+        android:id="@+id/tv_forecast_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="预测标题"
+        android:textSize="15sp"
+        android:textColor="@color/font_black"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/tv_forecast_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="走势"
+        android:textSize="13sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:singleLine="true"/>
+    <TextView
+        android:id="@+id/tv_forecast_text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="09.11"
+        android:textSize="13sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="15dp"
+        android:singleLine="true"
+        android:gravity="right"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color"
+        android:layout_marginTop="7dp"></View>
+
+</LinearLayout>

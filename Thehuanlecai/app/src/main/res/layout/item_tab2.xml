@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:id="@+id/ll_tab2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_tab2"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/banner2" />
+
+        <TextView
+            android:id="@+id/tv_tab2_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/iv_tab2"
+            android:singleLine="true"
+            android:text="竞彩卓见：五大联赛再度开启....."
+            android:textColor="@color/font_black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_tab2_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tab2_text1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/iv_tab2"
+            android:text="五大联赛再度开启....."
+            android:textSize="13sp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_tab2_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_tab2_text2"
+            android:layout_marginRight="10dp"
+            android:text="10:32"
+            android:textColor="@color/font_black"
+            android:layout_marginTop="5dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/tv_tab2_text3"
+            android:layout_marginTop="10dp"
+            android:background="@color/line_color"></View>
+    </RelativeLayout>
+</LinearLayout>

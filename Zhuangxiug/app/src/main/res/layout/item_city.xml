@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtCityInitial"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="A"
+        android:textColor="@color/text4"
+        android:textSize="12sp" />
+
+    <View style="@style/limit_line" />
+
+    <TextView
+        android:id="@+id/txtCityName"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/selec_itemview"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="武汉"
+        android:textColor="@color/text4"
+        android:textSize="15sp" />
+    <View style="@style/limit_line" />
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_color"
+    android:orientation="vertical">
+
+    <com.cnsunru.common.widget.titlebar.TitleBar
+        android:id="@+id/titleBar"
+        style="@style/BlackBackTitleBarStyle"
+        app:rightText="保存"
+        app:rightTextColor="@color/main_text_color"
+        app:rightVisible="visible"
+
+        app:title="编辑资料" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/setting_iv_photo_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fun_item_height"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="我的头像"
+                    android:textSize="14sp"
+                    />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgUserHead"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x20"
+                    android:layout_toLeftOf="@+id/setting_iv_go"
+                    android:src="@drawable/ic_def_head" />
+
+                <ImageView
+                    android:id="@+id/setting_iv_go"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x40"
+                    android:src="@drawable/icon_more" />
+
+
+            </RelativeLayout>
+
+
+            <View
+                style="@style/limit_line"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:layout_height="44dp">
+                <TextView
+                    style="@style/textView_style_14sp"
+                    android:text="我的昵称"
+                    />
+                <EditText
+                    style="@style/textView_style_14sp"
+                    android:paddingLeft="35dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:hint="昵称"
+                    android:id="@+id/editNickname"
+                    android:singleLine="true"
+                    android:textColor="@color/text4"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <View
+                style="@style/limit_line"
+                android:visibility="visible" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:visibility="gone"
+                android:layout_height="44dp">
+                <TextView
+                    style="@style/textView_style_14sp"
+                    android:text="个性签名"
+                    />
+                <EditText
+                    style="@style/textView_style_14sp"
+                    android:paddingLeft="35dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:hint="这里是个性签名"
+                    android:id="@+id/editSingle"
+                    android:singleLine="true"
+                    android:textColor="@color/text4"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <View
+                style="@style/limit_line"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

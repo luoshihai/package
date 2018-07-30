@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_color"
+    android:orientation="vertical">
+
+    <com.cnsunru.common.widget.titlebar.TitleBar
+        android:id="@+id/titleBar"
+        style="@style/BlackBackTitleBarStyle"
+        app:leftVisible="visible"
+        app:title="活动详情" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titleBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/$RightProductLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selec_itemview"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="178dp"
+                    android:background="#999999" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/itemTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="top|left"
+                        android:maxLines="1"
+                        android:text="促销活动,优惠大酬宾"
+                        android:textColor="@color/main_text_color"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/itemTitleDesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="活动时间:2017.8.25~2017.9.30"
+                        android:textColor="@color/text4"
+                        android:textSize="14sp" />
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/txtProductPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:text="¥ 499.00"
+                            android:textColor="#f00"
+                            android:textSize="18sp" />
+
+                        <!--<TextView-->
+                        <!--android:id="@+id/btnGo"-->
+                        <!--style="@style/smallBtn"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="right"-->
+                        <!--android:layout_marginTop="2dp"-->
+                        <!--android:ellipsize="end"-->
+                        <!--android:lines="1"-->
+                        <!--android:text="马上报名" />-->
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="top|left"
+                    android:maxLines="1"
+                    android:text="活动详情"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/itemAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="活动地点: 武汉市"
+                    android:textColor="@color/text4"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/itemRule"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="活动规则: 满8888即可"
+                    android:textColor="@color/text4"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layBottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtCollect"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableTop="@drawable/cb_collect"
+            android:gravity="center"
+            android:text="收藏"
+            android:textColor="@color/text4"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            style="@style/fullSubmitBtn"
+            android:text="马上报名" />
+    </LinearLayout>
+</RelativeLayout>

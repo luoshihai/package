@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:showDividers="middle"
+    android:divider="@drawable/linefull"
+    tools:context="com.jyt.huangguan.view.activity.EvaluateActivity">
+    <com.jyt.huangguan.view.widget.JumpItem
+        android:id="@+id/jt_j1"
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:Jump="true"
+        app:title="项目经理"/>
+    <com.jyt.huangguan.view.widget.JumpItem
+        android:id="@+id/jt_j2"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:Jump="true"
+        app:title="设计师"/>
+    <com.jyt.huangguan.view.widget.JumpItem
+        android:id="@+id/jt_j3"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:Jump="true"
+        app:title="预算员"/>
+    <com.jyt.huangguan.view.widget.JumpItem
+        android:id="@+id/jt_j4"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:Jump="true"
+        app:title="测量人员"/>
+
+
+</LinearLayout>

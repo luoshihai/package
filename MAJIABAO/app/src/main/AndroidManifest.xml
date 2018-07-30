@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qqq.asdas">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.qqq.asdas.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/qqq"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme1">
+        <activity
+            android:name="com.qqq.asdas.Main2Activity"
+            android:configChanges="screenSize|orientation"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.qqq.asdas.cptools.WelcomeActivity"/>
+        <activity
+            android:name="com.qqq.asdas.view.activities.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name="com.qqq.asdas.view.activities.NewsDetailActivity"
+            android:configChanges="screenSize|orientation" />
+        <activity
+            android:name="com.qqq.asdas.view.activities.TeamDetailActivity"
+            android:configChanges="screenSize|orientation" />
+        <activity
+            android:name="com.qqq.asdas.view.activities.PlayerDetailActivity"
+            android:configChanges="screenSize|orientation" />
+        <activity
+            android:name="com.qqq.asdas.view.activities.CoachDetailActivity"
+            android:configChanges="screenSize|orientation" />
+        <activity
+            android:name="com.qqq.asdas.view.activities.TwinsActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.qqq.asdas.view.activities.SpecialNewsActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.qqq.asdas.view.activities.SpecialNewsColumnActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.qqq.asdas.view.activities.SearchActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.qqq.asdas.view.activities.AboutActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name="com.qqq.asdas.view.activities.ImageActivity" />
+
+        <meta-data
+            android:name="com.qqq.asdas.utils.GlideDiskCacheModule"
+            android:value="GlideModule" />
+
+        <activity android:name="com.qqq.asdas.view.activities.TwinsActivityKotlin"></activity>
+
+        <activity android:name="com.qqq.asdas.cptools.UiActivity"/>
+        <activity android:name="com.qqq.asdas.cptools.WebActivity"/>
+        <activity android:name="com.qqq.asdas.SplashActivity"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.qqq.asdas.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            xmlns:tools="http://schemas.android.com/tools"
+            >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <activity android:name="com.lsh.packagelibrary.WebActivity"/>
+
+        <meta-data android:value="5b44669aa40fa303db0001ee" android:name="UMENG_APPKEY"/>
+
+        <meta-data android:value="abc" android:name="UMENG_CHANNEL"/>
+    </application>
+
+</manifest>

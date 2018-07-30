@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_yuce">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/iv_tab3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/lanqiu"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:id="@+id/tv_tab3_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="竞彩足球"
+            android:textSize="15sp"
+            android:textColor="@color/font_black"
+            android:layout_toRightOf="@+id/iv_tab3"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:id="@+id/tv_tab3_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="周五022：阵容不整 菜比锡难啃汉堡"
+            android:layout_toRightOf="@+id/iv_tab3"
+            android:layout_below="@+id/tv_tab3_text1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:singleLine="true"
+            android:textSize="13sp"
+            android:layout_marginRight="10dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color"
+            android:layout_below="@+id/iv_tab3"
+            android:layout_marginTop="10dp"></View>
+    </RelativeLayout>
+
+</LinearLayout>

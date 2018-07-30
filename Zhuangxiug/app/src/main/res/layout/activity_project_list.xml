@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_color"
+    android:orientation="vertical"
+    >
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+       android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.cnsunru.common.widget.titlebar.TitleBar
+            android:id="@+id/titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            app:leftAsFinish="true"
+            app:leftIcon="@drawable/icon_goback_black"
+            app:leftVisible="visible"
+            app:title="工程清单" />
+
+        <TextView
+            android:id="@+id/txtLocation"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/home_icon_location_n"
+            android:drawablePadding="4dp"
+            android:drawableRight="@drawable/icon_more"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="所在城市: 定位中.." />
+
+        <View style="@style/limit_line" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/y20"
+
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y300"
+                        android:background="@drawable/me_bg">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/x20"
+                            android:layout_marginTop="@dimen/y20"
+                            android:drawableLeft="@drawable/project_icon_print"
+                            android:drawablePadding="@dimen/x10"
+                            android:text="打印清单"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="88888.0"
+                            android:textColor="@color/white"
+                            android:textSize="40sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_money"
+                            android:layout_centerHorizontal="true"
+                            android:text="预算总金额(元)"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/x62"
+                                    android:layout_height="@dimen/y62"
+                                    android:layout_marginBottom="@dimen/y15"
+                                    android:layout_marginLeft="@dimen/x60"
+                                    android:layout_marginTop="@dimen/y15"
+                                    android:src="@drawable/project_icon_materialscost" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/y18"
+                                    android:layout_marginLeft="@dimen/x16"
+                                    android:layout_marginTop="@dimen/y18"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tvMaterialMoney"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="0.00"
+                                        android:textColor="#dc362a"
+                                        android:textSize="17sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="材料花费(元)"
+                                        android:textColor="@color/text4"
+                                        android:textSize="11sp" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="@dimen/y60"
+                                    android:layout_gravity="center_vertical|right"
+                                    android:background="@color/limit_line1" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/x62"
+                                    android:layout_height="@dimen/y62"
+                                    android:layout_marginBottom="@dimen/y15"
+                                    android:layout_marginLeft="@dimen/x60"
+                                    android:layout_marginTop="@dimen/y15"
+                                    android:src="@drawable/project_icon_basiccost" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/y18"
+                                    android:layout_marginLeft="@dimen/x16"
+                                    android:layout_marginTop="@dimen/y18"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tvBaseMoney"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="0.00"
+                                        android:textColor="#dc362a"
+                                        android:textSize="17sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="基装花费(元)"
+                                        android:textColor="@color/text4"
+                                        android:textSize="11sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View style="@style/limit_line" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/y25"
+                            android:layout_marginTop="@dimen/y25"
+                            android:paddingLeft="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="房型:"
+                                android:textColor="@color/text4"
+                                android:visibility="gone"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tvHouseType"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/x10"
+                                android:text="两室一厅一厨一卫"
+                                android:textColor="@color/text4"
+                                android:layout_marginRight="30dp"
+                                android:visibility="gone"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tvHouseArea"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="面积:80m"
+                                android:textColor="@color/text4" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include layout="@layout/project_head_view" />
+
+                <View style="@style/limit_line" />
+
+                <com.sunrun.sunrunframwork.weight.ListViewForScroll
+                    android:id="@+id/listViewForScroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+
+        <RelativeLayout
+            android:id="@+id/left_container"
+            android:layout_width="@dimen/x300"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            >
+            <LinearLayout
+                android:id="@+id/laySave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x50"
+                >
+                
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/project_icon_save"
+                    />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text4"
+                    android:textSize="12sp"
+                    android:text="保存"
+                    />
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/goMaterialInfo"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/x50"
+                >
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:scaleType="center"
+                    android:src="@drawable/project_icon_materials"
+                    />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text4"
+                    android:textSize="12sp"
+                    android:text="材料清单"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <TextView
+            android:layout_toRightOf="@+id/left_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="去支付清单"
+            android:background="#dc362a"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="17sp"
+            />
+    </LinearLayout>
+</LinearLayout>

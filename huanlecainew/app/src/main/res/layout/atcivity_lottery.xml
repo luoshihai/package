@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/tool_bar" />
+
+    <RadioGroup
+        android:id="@+id/type_rgp1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/type1_rbt1"
+            style="@style/rbt_style1"
+            android:checked="true"
+            android:drawablePadding="7dp"
+            android:paddingTop="13dp"
+            android:text="数字彩" />
+
+        <RadioButton
+            android:id="@+id/type2_rbt1"
+            style="@style/rbt_style1"
+            android:drawablePadding="7dp"
+            android:paddingTop="13dp"
+            android:text="竞技彩" />
+
+        <RadioButton
+            android:id="@+id/type3_rbt1"
+            style="@style/rbt_style1"
+            android:drawablePadding="7dp"
+            android:paddingTop="13dp"
+            android:text="快频彩" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+</LinearLayout>

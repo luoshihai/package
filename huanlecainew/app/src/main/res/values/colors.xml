@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#40ff5d</color>
+    <color name="colorPrimaryDark">#40ff5d</color>
+    <color name="colorAccent">#40ff5d</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green">#303F9F</color>
+    <color name="green1">#238E23</color>
+
+    <!-- 公共头部标题颜色-->
+    <color name="title_color">#FFFFFF</color>
+    <color name="title_bg_color">#e6241f</color>
+    <color name="theme_color">#ff7953</color>
+
+    <color name="font_theme_bg">#fe5e5a</color>
+
+
+    <!--字体色-->
+    <color name="font_black">#000000</color>
+
+    <color name="font_gray_black">#111111</color>
+
+    <color name="font_light_black">#666666</color>
+    <color name="font_gray">#505050</color>
+    <color name="font_gray2">#505050</color>
+
+    <color name="font_white">#FFFFFF</color>
+    <color name="font_blue">#FF0F2EDA</color>
+    <color name="font_gree">#FF08F35D</color>
+    <color name="font_red">#FFE5350D</color>
+    <color name="font_orange">#ff7953</color>
+    <color name="font_yellow">#ffa634</color>
+    <color name="coupon">#FF5859</color>
+
+    <color name="text_bg_grey">#F8F8F8</color>
+
+    <color name="font_theme_color">#e6241f</color>
+
+    <!-- 线颜色 -->
+    <color name="line_color">#FFDDD9D9</color>
+
+    <!-- 按钮色-->
+    <color name="bnt_theme_color">#e6241f</color>
+
+    <color name="bnt_red1_color">#ff7c7a</color>
+
+    <!-- 背景颜色 -->
+    <color name="btn_disable">#d6d6d6</color>
+    <color name="bg_gray">#ebebeb</color>
+
+    <color name="bg_yellow">#fff0c6</color>
+    <color name="lucency_black">#40000000</color>
+    <color name="btn_light_red_bg">#987C93</color>
+    <color name="white_ce">#ceffffff</color>
+    <color name="bg_talk_phpto">#C3C3C3</color>
+
+
+    <!-- 通用 -->
+    <color name="android_white">#FFFFFF</color>
+    <color name="android_light_blue">#317cd3</color>
+    <color name="android_black">#000000</color>
+    <color name="android_gray">#E6E6E6</color>
+    <color name="android_dark_gray">#B8BCC5</color>
+    <color name="android_light_gray">#cccccc</color>
+    <color name="android_dark_blue">#062438</color>
+    <color name="android_red">#FF0000</color>
+    <color name="android_green">#00FF00</color>
+    <color name="android_blue">#00BFFF</color>
+    <color name="android_transparent">#00000000</color>
+    <color name="android_transparent1">#22000000</color>
+    <color name="android_transparent_theme">#FEE3ED</color>
+
+    <color name="android_orange">#FF8040</color>
+    <color name="android_yellow">#FFFF00</color>
+    <color name="red">#CC0000</color>
+    <color name="app_transparent">#21000000</color>
+
+    <color name="transparent_white">#99ffffff</color>
+
+    <!--半透明背景-->
+    <color name="transparent_back">#66000000</color>
+    <color name="transparent_white_back">#79ffffff</color>
+    <!-- 背景全透明 -->
+    <color name="back_alltransparent">#00000000</color>
+    <!--仿ios弹出框-->
+    <color name="trans">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    //切换tab颜色
+    <color name="tab_theme_color">#e6241f</color>
+    <color name="black_overlay">#66000000</color>
+
+    <color name="gray">#808080</color>
+    <color name="gray_d">#9B9B9B</color>
+
+    <color name="orange">#FFA500</color>
+    <color name="yellow">#FFFFFF</color>
+
+    <color name="blue">#0000FF</color>
+    <color name="violet">#EE82EE</color>
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    <!-- 半透明 -->
+    <color name="blur">#77000000</color>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_color"
+    android:orientation="vertical"
+    >
+
+    <com.cnsunru.common.widget.titlebar.TitleBar
+        style="@style/BlackBackTitleBarStyle"
+        android:id="@+id/titleBar"
+        app:rightTextColor="@color/text4"
+        app:title="密码修改" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/stroke_top_and_bottom_line_drawable"
+        android:layout_marginTop="10dp"
+        android:divider="@drawable/divider_inner_drawable"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+
+        <com.cnsunru.common.widget.edittext.EditView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="#fff"
+            android:id="@+id/editOldPwd"
+            app:hintText="请输入旧密码"
+            app:maxLength="20"
+            app:rightAction="password"
+            app:inputType="password"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <com.cnsunru.common.widget.edittext.EditView
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:id="@+id/editNewPwd"
+                app:hintText="请输入新密码"
+                app:inputType="password"
+                app:rightAction="password"
+                app:maxLength="20" />
+        </LinearLayout>
+
+
+        <com.cnsunru.common.widget.edittext.EditView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="#fff"
+            app:hintText="请确认新密码"
+            app:inputType="password"
+            app:maxLength="12"
+            android:id="@+id/editConfirmNewPwd"
+            app:rightAction="password"
+            />
+
+
+    </LinearLayout>
+
+
+    <Button
+        style="@style/submitBtn"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="确认修改"
+        android:textSize="18sp"
+        android:id="@+id/submit"
+        />
+
+
+</LinearLayout>

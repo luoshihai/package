@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_color"
+    android:orientation="vertical">
+
+    <com.cnsunru.common.widget.titlebar.TitleBar
+        android:id="@+id/titleBar"
+        style="@style/BlackBackTitleBarStyle"
+        app:fitStatusBar="true"
+        app:title="平面石膏板吊顶" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/labTxt"
+                    style="@style/textView_style_14sp"
+                    android:gravity="center_vertical"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="10dp"
+                    android:text="吊顶形式" />
+
+                <com.cnsunru.common.widget.TagFlowLayout
+                    android:id="@+id/categoryTags"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtTip"
+                style="@style/textView_style_14sp"
+                android:layout_height="37dp"
+                android:drawableLeft="@drawable/project_icon_self_select"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="该标识代表已自选"
+                android:textColor="@color/text4" />
+
+            <com.cnsunru.common.widget.BoxLayout
+                android:id="@+id/layBigTitle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="10dp"
+                app:box_Border="bottom">
+
+                <TextView
+                    android:id="@+id/txtLab"
+                    style="@style/textView_style_14sp"
+                    android:drawableLeft="@drawable/pdtdetail_icon_title"
+                    android:drawablePadding="5dp"
+                    android:text="材料明细"
+                    android:textStyle="bold" />
+
+            </com.cnsunru.common.widget.BoxLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:scrollbars="none">
+
+                <win.smartown.android.library.tableLayout.TableLayout
+                    android:id="@+id/materialsTable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:backgroundColorSelected="@color/white"
+                    app:tableRowHeight="30dp"
+                    app:tableTextColor="@color/text4"
+                    app:tableTextColorSelected="@color/text4" />
+            </HorizontalScrollView>
+            <View
+                android:layout_marginTop="20dp"
+                style="@style/limit_line"/>
+            <Button
+                android:id="@+id/btnDelete"
+                style="@style/fullSubmitBtn"
+                android:textColor="@color/main_color_red"
+                android:background="@drawable/selec_itemview"
+                android:text="删除该项目"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">重庆时时装</string>
+    <!--<string name="app_id">910055</string>-->
+    <string name="app_id">991013</string>
+    <string name="testinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n
+        Aenean euismod bibendum laoreet. Proin gravida dolor sit\n
+        amet lacus accumsan et viverra justo commodo. Proin\n
+        sodales pulvinar tempor. Cum sociis natoque penatibus et\n
+        magnis dis parturient montes, nascetur ridiculu</string>
+
+    <string name="user_agreement"><book>点击注册表示同意&lt;&lt;服务协议&gt;&gt;</book></string>
+    <string name="get_anth_code"><u>获取验证码</u></string>
+    <string name="forgat_password"><u>忘记密码?</u></string>
+
+
+    <string name="app_url1">http://38922dh.com/switch/api2/main_view_config</string>
+    <!--<string name="app_url1">http://mj.baolai668.com/switch/api2/main_view_config</string>-->
+    <!--<string name="app_url2">http://mjt.baolai668.comswitch/api2/main_view_config</string>-->
+    <string name="app_url2">http://dh38922.com/switch/api2/main_view_config</string>
+    <!-- WXPayEntryActivity -->
+</resources>

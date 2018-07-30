@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal">
+
+<TextView
+    android:id="@+id/labTxt1"
+    style="@style/textView_style_14sp"
+    android:layout_marginRight="30dp"
+    android:layout_height="40dp"
+    android:gravity="center"
+    android:text="风格" />
+
+<com.cnsunru.common.widget.TagFlowLayout
+    android:id="@+id/styleTags"
+    android:layout_width="match_parent"
+    android:minHeight="30dp"
+    android:layout_height="wrap_content" />
+</LinearLayout>

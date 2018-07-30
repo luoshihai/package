@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_color"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:layout_height="match_parent">
+            <com.sunrun.sunrunframwork.weight.ListViewForScroll
+                android:id="@+id/listInfos"
+                android:divider="@null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/layDelete"
+                android:layout_height="wrap_content">
+            <View
+                android:layout_marginTop="30dp"
+                style="@style/limit_line"/>
+            <Button
+                android:id="@+id/btnDelete"
+                style="@style/fullSubmitBtn"
+                android:textColor="@color/main_color_red"
+                android:background="@drawable/selec_itemview"
+                android:text="删除房间"
+                />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

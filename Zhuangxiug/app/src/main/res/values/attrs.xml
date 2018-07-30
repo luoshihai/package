@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="BoxLayout">
+
+        <attr name="box_Border">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+            <flag name="both" value="0x77" />
+            <flag name="none" value="0x00" />
+        </attr>
+        <attr name="box_BorderWidth" format="dimension" />
+        <attr name="box_BorderColor" format="color" />
+        <attr name="box_Padding" format="string" />
+    </declare-styleable>
+    <declare-styleable name="LabTextView">
+        <attr name="labGap" format="dimension" />
+        <attr name="labText" format="string" />
+        <attr name="labColor" format="color" />
+        <attr name="labSize" format="dimension" />
+        <attr name="contentText" format="string" />
+        <attr name="contentColor" format="color" />
+        <attr name="contentSize" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="SwitchView">
+        <attr name="hasShadow" format="boolean" />
+        <attr name="primaryColor" format="color" />
+        <attr name="primaryColorDark" format="color" />
+        <attr name="isOpened" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="EditView">
+        <attr name="hintText" format="string" />
+        <attr name="text" format="string" />
+        <attr name="maxLength" format="integer" />
+        <attr name="editable" format="boolean" />
+        <attr name="leftImg" format="reference" />
+        <attr name="rightImg" format="reference" />
+        <attr name="inputType" format="enum">
+            <enum name="password" value="129" />
+            <enum name="text" value="1" />
+            <enum name="number" value="2" />
+        </attr>
+        <attr name="rightAction" format="enum">
+            <enum name="password" value="0" />
+            <enum name="clearAll" value="1" />
+            <enum name="mingwen" value="2" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="RoundImageView">
+        <attr name="leftTopRadius" format="dimension" />
+        <attr name="leftBottomRadius" format="dimension" />
+        <attr name="rightBottomRadius" format="dimension" />
+        <attr name="rightTopRadius" format="dimension" />
+        <attr name="Radius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgressView">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MomentPicView">
+        <attr name="mpvHorizontalSpace" format="dimension" />
+        <attr name="mpvVerticalSpace" format="dimension" />
+        <attr name="mpvRadius" format="dimension" />
+        <attr name="mpvRatio" format="float" />
+        <attr name="mpvColumns" format="integer" />
+    </declare-styleable>
+</resources>

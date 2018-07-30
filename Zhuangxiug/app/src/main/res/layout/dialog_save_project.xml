@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/shap_dialog_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="保存项目名称"
+            android:textColor="@color/main_text_color"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edit_money"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            style="@style/edit_text_style"
+            android:hint="请输入项目名称"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:maxLength="20"
+            android:textColor="@color/text_gray_color_d0"
+            android:textColorHint="@color/text_gray_color_d0"
+            android:textSize="14sp" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSubmit"
+                style="@style/autoHeightBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:text="保存" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                style="@style/autoHeightBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_cancel_bg"
+                android:text="取消" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
